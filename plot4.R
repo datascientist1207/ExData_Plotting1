@@ -14,6 +14,7 @@ plot( strptime( paste0(FebPowerConsumption$Date, " ", FebPowerConsumption$Time )
 
 
 #bottomleft graph
+#par("cex') needed to be modified as the legend covered up the graph on my system
 SexVariable <- par("cex")
 par(cex=.75)
 plot( strptime( paste0(FebPowerConsumption$Date, " ", FebPowerConsumption$Time ),format="%Y-%m-%d %H:%M:%S" ), FebPowerConsumption$Sub_metering_1, type="l",ylab="Energy sub metering",xlab="" )
